@@ -1,0 +1,8 @@
+class:
+  class_name: 友情链接
+  link_list:
+    1:
+        name: Hoe's Notes
+        link: https://www.hoehub.com
+        avatar: https://cdn.v2ex.com/gravatar/dc1187890e4cc4ca1a41a83f4f7eb559?s=80&r=G
+        descr: 专注于后端开发的技术博客
