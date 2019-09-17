@@ -1,0 +1,118 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>数据结构 | 我的博客</title><meta name="description" content="数据结构"><meta name="keywords" content><meta name="author" content="Cooper"><meta name="copyright" content="Cooper"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="canonical" href="http://www.coperr.com/2019/09/16/数据结构/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="数据结构"><meta name="twitter:description" content="数据结构"><meta name="twitter:image" content="https://s.gravatar.com/avatar/c4c3c1cb9c725768a0755647f4a3eedc?s=80"><meta property="og:type" content="article"><meta property="og:title" content="数据结构"><meta property="og:url" content="http://www.coperr.com/2019/09/16/数据结构/"><meta property="og:site_name" content="我的博客"><meta property="og:description" content="数据结构"><meta property="og:image" content="https://s.gravatar.com/avatar/c4c3c1cb9c725768a0755647f4a3eedc?s=80"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="next" title="教你搭建基于 Hexo 的 Github pages 博客" href="http://www.coperr.com/2019/08/17/手把手教你搭建Github-pages博客/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"http://www.coperr.com/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight_copy: 'true',
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    title: 'Bookmark',
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days'
+
+  
+}</script></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#categories-计算机理论"><span class="toc-number">1.</span> <span class="toc-text">categories:计算机理论</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#第一章-绪论"><span class="toc-number"></span> <span class="toc-text">第一章     绪论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-数据结构的基本概念"><span class="toc-number">1.</span> <span class="toc-text">1.1 数据结构的基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-1-数据结构实例"><span class="toc-number">1.1.</span> <span class="toc-text">1.1.1 数据结构实例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-2-数据结构的概念"><span class="toc-number">1.2.</span> <span class="toc-text">1.1.2 数据结构的概念</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-算法和算法分析"><span class="toc-number">2.</span> <span class="toc-text">1.2 算法和算法分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-1-算法"><span class="toc-number">2.1.</span> <span class="toc-text">1.2.1 算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-2-算法分析"><span class="toc-number">2.2.</span> <span class="toc-text">1.2.2 算法分析</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第二章-线性表"><span class="toc-number"></span> <span class="toc-text">第二章 线性表</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-线性表的基本概念"><span class="toc-number">1.</span> <span class="toc-text">2.1 线性表的基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-1-线性表的定义"><span class="toc-number">1.1.</span> <span class="toc-text">2.1.1 线性表的定义</span></a></li></ol></li></ol></li></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/post.png)"><div id="page-header"><span class="pull-left"> <a class="blog_title" id="site-name" href="/">我的博客</a></span><div class="open toggle-menu pull-right"><div class="menu-icon-first"></div><div class="menu-icon-second"></div><div class="menu-icon-third"></div></div><span class="pull-right menus"><div class="mobile_author_icon"><img class="lozad" src="https://s.gravatar.com/avatar/c4c3c1cb9c725768a0755647f4a3eedc?s=80" onerror="onerror=null;src='/img/friend_404.gif'"><div class="mobile_author-info__description"></div></div><hr><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a><script>document.body.addEventListener('touchstart', function(){ });</script></div></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title"><div class="posttitle">数据结构</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> Created 2019-09-16<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> Updated 2019-09-16</time></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><hr>
+<p>title: 数据结构<br>date: 2019-08-27 15:35:08<br>tags:</p>
+<h2 id="categories-计算机理论"><a href="#categories-计算机理论" class="headerlink" title="categories:计算机理论"></a>categories:计算机理论</h2><h1 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章     绪论"></a>第一章     绪论</h1><h2 id="1-1-数据结构的基本概念"><a href="#1-1-数据结构的基本概念" class="headerlink" title="1.1 数据结构的基本概念"></a>1.1 数据结构的基本概念</h2><h3 id="1-1-1-数据结构实例"><a href="#1-1-1-数据结构实例" class="headerlink" title="1.1.1 数据结构实例"></a>1.1.1 数据结构实例</h3><p>数据结构是一门研究非数值运算的程序设计问题中的操作对象以及他们之间的关系和操作等的学科。</p>
+<p>学习数据结构的目的是了解计算机处理对象的特性，能够将实际问题中所表示涉及的处理对象及这些对象之间的关系进行抽象</p>
+<p>并在计算机中表示出来，最后再对它们进行处理。</p>
+<h3 id="1-1-2-数据结构的概念"><a href="#1-1-2-数据结构的概念" class="headerlink" title="1.1.2 数据结构的概念"></a>1.1.2 数据结构的概念</h3><p>1.数据    </p>
+<p>  数据是信息的载体，是对客观事物的符号表示。    </p>
+<p>2.数据元素</p>
+<p>数据元素是对现实世界中某个独立个体的数据描述，是数据的基本单位。</p>
+<p>数据项是具有独立意义的最小数据单位。</p>
+<p>3.数据对象</p>
+<p>数据对象是具有相同性质的数据元素的集合，是数据的一个子集。</p>
+<p>4.数据结构</p>
+<p>数据结构是相互之间存在一种或多种特定关系的数据元素集合。</p>
+<p>数据元素可由一个二元组（D,S）定义，其中D是数据元素的有限集，S是D中元素的关系的有限集。</p>
+<p>(1) 线性结构。结构中的数据元素之间存在一个对一个的关系。</p>
+<p>(2) 树形结构。结构中的数据元素之间存在一个对多个的关系。</p>
+<p>(3) 图结构或网结构。结构中的数据元素之间存在多个对多个的关系。</p>
+<p>3种数据结构划分两大类：线性结构  非线性结构</p>
+<p>线性结构逻辑特征：有且只有一个开始结点和一个终端节点，并且所有的结点都最多有一个直接前驱和一个直接后继。</p>
+<p>非线性结构逻辑特征：一个结点可能有多个直接前驱和直接后继。</p>
+<p>5.逻辑结构</p>
+<p>逻辑结构描述数据元素之间的元素之间的逻辑关系。</p>
+<p>通常说的线性结构、树形结构和图结构就是指数据元素的逻辑结构。</p>
+<p>6.存储结构（物理结构）</p>
+<p>存储结构是数据结构在计算机中的表示。具有某种逻辑结构的数据元素在计算机中有顺序映像和非顺序映像。</p>
+<p>由此可得两种不同的存储结构：顺序存储结构   链式存储结构</p>
+<p>顺序存储结构：是把必要的数据元素存储在存储单元中，通过对存储单元的地址进行一个固定的计算就能直接表达数据元素之间逻辑上的关系的物理结构。</p>
+<p>链式存储结构：是把数据元素存储在附设了指针域的存储单元中，通过指针域的值来表达数据元素之间逻辑关系的物理结构。</p>
+<p>补充：有时为了特定操作的方便可以采用索引存储和散列结构存储方法。</p>
+<h2 id="1-2-算法和算法分析"><a href="#1-2-算法和算法分析" class="headerlink" title="1.2 算法和算法分析"></a>1.2 算法和算法分析</h2><h3 id="1-2-1-算法"><a href="#1-2-1-算法" class="headerlink" title="1.2.1 算法"></a>1.2.1 算法</h3><p>算法五大特性：1、有穷性 2、确定性 3、可行性 4、输入 5、输出</p>
+<p>算法设计要求：1、正确性 2、可读性 3、健壮性 4、高效性和低存储量。</p>
+<h3 id="1-2-2-算法分析"><a href="#1-2-2-算法分析" class="headerlink" title="1.2.2 算法分析"></a>1.2.2 算法分析</h3><p>1.算法时间复杂度</p>
+<p>使用算法所有语句的频度之和f(n)表示该算法的时间。</p>
+<p>时间固定的情况下，语句的数量能大致表示算法运行所需的时间，因此粗粒度描述了一个算法所需的时间。</p>
+<p>T(n)=O(f(n)) 表示随着问题的扩大，T(n)的增长率和f(n)的增长率相同。称T(n)为时间复杂度。</p>
+<figure class="highlight plain"><figcaption><span>```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">	</span><br><span class="line">2.算法空间复杂度</span><br><span class="line">	</span><br><span class="line">算法空间复杂度反映了程序运行从开始到结束所需的额外存储量。用S(n)=O(f(n))表示。</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">## 1.3 算法描述与C语言数据类型</span><br><span class="line"></span><br><span class="line">### 1.3.1 算法描述语言</span><br><span class="line"></span><br><span class="line">1.数据类型</span><br><span class="line">	</span><br><span class="line">包括C语言的所有数据类型（整型、实型、字符型、数组、指针、结构、共用体等）</span><br><span class="line">	</span><br><span class="line">2.变量和符号常量</span><br><span class="line">	</span><br><span class="line">变量的定义形式为</span><br><span class="line">	</span><br><span class="line">数据类型	变量名序列；</span><br><span class="line">	</span><br><span class="line">符号常量的定义形式为</span><br><span class="line">	</span><br><span class="line">``` #define 符号常量名 常量值</span><br></pre></td></tr></table></figure>
+<p>3.数据运算</p>
+<p>数据运算主要包括算术运算、关系运算和逻辑运算。</p>
+<p>4.赋值语句</p>
+<p>5.控制语句</p>
+<p>（1）选择语句包括条件语句和多项选择语句。</p>
+<p>包括if语句和switch语句。</p>
+<p>（2）循环语句，包括for语句、while语句和do-while语句</p>
+<p>6.函数的声明和调用</p>
+<pre><code>返回类型 函数名（形式参数列表）
+{
+
+    函数定义语句块；
+
+}；
+
+函数的声明形式为
+
+返回类型 函数名（形式参数的列表）；
+
+函数名（实际参数列表）；
+</code></pre><p>7.输入、输出</p>
+<p>8.结束语句</p>
+<p>异常结束语句exit，形式为</p>
+<pre><code>exit(异常代码)
+</code></pre><p>9.注释</p>
+<p>1.3.2</p>
+<p>1.3.2.1 基本数据类型</p>
+<p>1.整型数据</p>
+<pre><code>（1）基本整型 int
+
+（2）短整型   short int
+
+（3）长整型   long int      
+
+记住了 int整型的值的范围为（-2^15~2^15-1），即-32768~32767
+</code></pre><p>2.实型数据</p>
+<p>实型变量分为单精度（float）、双精度（double）和长双精度（long double）三类。</p>
+<p>3.字符数据</p>
+<p>字符变量用来存放字符常量，用char来定义。</p>
+<p>1.3.2.2 构造类型</p>
+<p>1.数组类型</p>
+<p>数组是相同类型的数据元素的有序集合。</p>
+<p>2.结构体类型</p>
+<p>C语言中，数组是用来存储多个类型的元素的有序集合，但是，有时数据类型的数据组合成一个有机整体，以便于引用。</p>
+<p>C语言中的结构体就是这样的一种数据，它由多个成员组成，每个成员可以分属不同的数据类型。</p>
+<p>结构变量的定义如下</p>
+<p>首先定义所需的结构类型：</p>
+<pre><code>struct 结构名称
+{
+   成员定义列表
+}；
+</code></pre><p>如果是通过指向结构变量的指针来访问结构变量的成员，必须使用”-&gt;”运算符来访问。</p>
+<p>3.共用体类型</p>
+<p>共用体功能：C语言中，有时需要一个变量存放多种数据类型的印象，可使用其中某一个数据。</p>
+<p>共用体与结构体的区别在于：共用体在任意时刻只有一个变量处于活动状态。</p>
+<p>4.枚举</p>
+<h1 id="第二章-线性表"><a href="#第二章-线性表" class="headerlink" title="第二章 线性表"></a>第二章 线性表</h1><h2 id="2-1-线性表的基本概念"><a href="#2-1-线性表的基本概念" class="headerlink" title="2.1 线性表的基本概念"></a>2.1 线性表的基本概念</h2><h3 id="2-1-1-线性表的定义"><a href="#2-1-1-线性表的定义" class="headerlink" title="2.1.1 线性表的定义"></a>2.1.1 线性表的定义</h3><p>线性表是一种常见的数据结构。</p>
+<p>线性表的特点：组成元素之间是线性关系。</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Cooper</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://www.coperr.com/2019/09/16/数据结构/">http://www.coperr.com/2019/09/16/数据结构/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://s.gravatar.com/avatar/c4c3c1cb9c725768a0755647f4a3eedc?s=80" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="next-post pull-full"><a href="/2019/08/17/手把手教你搭建Github-pages博客/"><img class="next_cover lozad" data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Next Post</div><div class="next_info"><span>教你搭建基于 Hexo 的 Github pages 博客</span></div></a></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2018 - 2019 By Cooper</div><div class="framework-info"><span>Driven </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly"><span>Butterfly</span></a></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><section class="rightside" id="rightside"><i class="fa fa-book" id="readmode" title="Read Mode"> </i><i class="fa fa-plus" id="font_plus" title="Increase font size"></i><i class="fa fa-minus" id="font_minus" title="Decrease font size"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="Traditional Chinese and Simplified Chinese Conversion">繁</a><i class="fa fa-moon-o nightshift" id="nightshift" title="Dark Mode"></i></section><div id="post_bottom"><div id="post_bottom_items"><a id="to_comment" href="#post-comment"><i class="scroll_to_comment fa fa-comments"></i></a><i class="fa fa-list" id="mobile_toc"></i><div id="toc_mobile"><div class="toc_mobile_headline">Catalog</div><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#categories-计算机理论"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">categories:计算机理论</span></a></li></ol><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#第一章-绪论"><span class="toc_mobile_items-number"></span> <span class="toc_mobile_items-text">第一章     绪论</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-1-数据结构的基本概念"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">1.1 数据结构的基本概念</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1-1-1-数据结构实例"><span class="toc_mobile_items-number">1.1.</span> <span class="toc_mobile_items-text">1.1.1 数据结构实例</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1-1-2-数据结构的概念"><span class="toc_mobile_items-number">1.2.</span> <span class="toc_mobile_items-text">1.1.2 数据结构的概念</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1-2-算法和算法分析"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">1.2 算法和算法分析</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1-2-1-算法"><span class="toc_mobile_items-number">2.1.</span> <span class="toc_mobile_items-text">1.2.1 算法</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1-2-2-算法分析"><span class="toc_mobile_items-number">2.2.</span> <span class="toc_mobile_items-text">1.2.2 算法分析</span></a></li></ol></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#第二章-线性表"><span class="toc_mobile_items-number"></span> <span class="toc_mobile_items-text">第二章 线性表</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#2-1-线性表的基本概念"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">2.1 线性表的基本概念</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2-1-1-线性表的定义"><span class="toc_mobile_items-number">1.1.</span> <span class="toc_mobile_items-text">2.1.1 线性表的定义</span></a></li></ol></li></ol></li></div></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/nightshift.js"></script><script id="ribbon" src="/js/third-party/canvas-ribbon.js" size="150" alpha="0.6" zindex="-1" data-click="false"></script><script src="/js/tw_cn.js"></script><script>translateInitilization()
+
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@1.2.2/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script><script>const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();</script></body></html>
